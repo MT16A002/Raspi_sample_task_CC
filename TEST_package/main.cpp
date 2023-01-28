@@ -2,8 +2,8 @@
 //
 
 #include "main.h"
-#include "task_sub1.h"
-#include "task_sub2.h"
+#include "task_sub.h"
+
 
 //タスク系初期化
 const int TASK_NUM = 2;
