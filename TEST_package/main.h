@@ -15,6 +15,10 @@
 #include <pthread.h>
 #include <stdbool.h>
 #include <sys/select.h>
+#include <cstring>
+#include <sys/socket.h>
+#include <netdb.h>
+#include <chrono>
 
 
 //タスク間で共通のグローバル
