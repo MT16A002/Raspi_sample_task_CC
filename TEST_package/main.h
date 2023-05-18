@@ -24,12 +24,12 @@
 //タスク間で共通のグローバル
 struct Common
 {
-	int init;
-	int count;
-	int fin;
+  int init;
+  int count;
+  int fin;
 };
 
-void init(Common &global);
+void init(Common& global);
 
 
 #endif //_H_MAIN
