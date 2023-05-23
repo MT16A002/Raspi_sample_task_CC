@@ -9,15 +9,13 @@
 const int TASK_NUM = 2;
 pthread_t task[TASK_NUM];
 int task_result[TASK_NUM];
-//排他ロック
-pthread_mutex_t mutex;
 
 
 //メイン
-int main() {
-
-  pthread_mutex_init(&mutex, NULL);
+int main() 
+{
   struct Common global;
+  pthread_mutex_init(&global.mutex, NULL);
   init(global);
 
   /////////////////////////////////////
@@ -63,7 +61,7 @@ int main() {
   pthread_cancel(task[0]);
   pthread_cancel(task[1]);
 
-  pthread_mutex_destroy(&mutex);
+  pthread_mutex_destroy(&global.mutex);
 
   return 0;
 }

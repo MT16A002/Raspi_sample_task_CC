@@ -27,6 +27,7 @@ struct Common
   int init;
   int count;
   int fin;
+  pthread_mutex_t mutex;
 };
 
 void init(Common& global);
